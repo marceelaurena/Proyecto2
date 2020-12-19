@@ -2,7 +2,7 @@
 package examenFinal;
 
 public class ParlanteSubwoofer {
-        String audio;
+        String audio= "10101";
     
     
 public ParlanteSubwoofer(){

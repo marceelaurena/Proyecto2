@@ -3,7 +3,7 @@ package examenFinal;
 
 
 public class ParlanteIzquierdo {
-        String audio;
+        String audio= "10101";
     
     
 public ParlanteIzquierdo(){
