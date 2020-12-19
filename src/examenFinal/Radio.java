@@ -2,6 +2,6 @@
 package examenFinal;
 
 
-public class EquipoSonido {
+public class Radio {
     
 }
