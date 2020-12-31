@@ -1,61 +1,32 @@
-
 package examenFinal;
 
 import java.util.Scanner;
 
-
 public class EquipoSonidoVista {
- 
+
     Scanner entrada = new Scanner(System.in);
-    ParlanteDerecho pd;
-    ParlanteIzquierdo pi;
+    ParlantePequeno p;
     ParlanteSubwoofer ps;
-    ListaAudios lista;
-    
-// AJUSTE PARLANTES
-public void AjustarVolumen(){
+    Radio rad;
 
-System.out.println("Seleccione el volumen para el parlante derecho del 0 al 10");
-int volumen1 = entrada.nextInt();
-System.out.println("Seleccione el volumen para el parlante izquierdo del 0 al 10");
-int volumen2 = entrada.nextInt();
-System.out.println("Seleccione el volumen para el parlante subwoofer del 0 al 10");
-int volumen3 = entrada.nextInt();
-}
-public void HabilitarParlante (ParlanteDerecho pd, ParlanteIzquierdo pi, ParlanteSubwoofer ps){
-boolean habilitar = true;
-System.out.println("Si desea deshabilitar el parlante derecho marque 1");
-int habilitarPd = entrada.nextInt();
-System.out.println("Si desea deshabilitar el parlante izquierdo marque 1");
-int habilitarPi = entrada.nextInt();
-System.out.println("Si desea deshabilitar el parlante subwoofer marque 1");
-int habilitarPs = entrada.nextInt();
+    EquipoSonidoVista(EquipoSonido eS) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-if (habilitarPd == 1){
-habilitar = false;
+    public void setHabilitarParlante(int tipoParlante, boolean habilitar) {
+        System.out.println("Digite tipo de parlante: Pequeno derecho==1, Pequeno Izquierdo==2, Subwoofer==3");
+        tipoParlante = entrada.nextInt();
+        System.out.println("Desea mantenerlo habilitado? Si==true, No==false");
+        habilitar = entrada.nextBoolean();
+    }
+    public void setAjustarVolumen(int tipoParlante, boolean subir) {
+        System.out.println("Digite tipo de parlante: Pequeno derecho==1, Pequeno Izquierdo==2, Subwoofer==3");
+        tipoParlante = entrada.nextInt();
+        System.out.println("Desea subir el volumen? Si==true, No==false");
+        subir = entrada.nextBoolean();
+    }
+    public void setElegirReproductor(int elegirReproductor){
+        System.out.println("Elija que desea reproducir: Lista de audios == 1, Radio == 2");
+        elegirReproductor = entrada.nextInt();
+    }
 }
-else {
-habilitar = true;
-}
-if (habilitarPi == 1){
-habilitar = false;
-}
-else {
-habilitar = true;
-}
-if (habilitarPs == 1){
-habilitar = false;
-}
-else {
-habilitar = true;
-}}
-// AJUSTE LISTA DE REPRODUCCION
-public void menuListaReproduccion(){
-int menu=0;
-switch(menu){
-    case 1:
-        
-}
-}
-}
-

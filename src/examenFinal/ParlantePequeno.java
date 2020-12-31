@@ -1,15 +1,16 @@
 package examenFinal;
 
-public class ParlanteSubwoofer {
+public class ParlantePequeno {
 
-    boolean habilitado = true;
+    int tipoParlante;
+    boolean habilitado=true;
     boolean subirVolumen=true;
     
-    public ParlanteSubwoofer() {
+    public ParlantePequeno() {
     }
 
-    public ParlanteSubwoofer(boolean habilitado) {
-   
+    public ParlantePequeno(int tipoParlante, boolean habilitado) {
+        this.tipoParlante = tipoParlante;
         this.habilitado = habilitado;
     }
 
@@ -18,6 +19,14 @@ public class ParlanteSubwoofer {
         System.out.println(audio);
     }
 
+    public int getTipoParlante() {
+        return tipoParlante;
+    }
+
+
+    public void setTipoParlante(int tipoParlante) {
+        this.tipoParlante = tipoParlante;
+    }
 
     public boolean isHabilitado() {
         return habilitado;
@@ -35,4 +44,6 @@ public class ParlanteSubwoofer {
         this.subirVolumen = subirVolumen;
     }
     
+   
+
 }
